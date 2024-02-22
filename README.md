@@ -1,10 +1,14 @@
-# Welcome to Remix!
+# Remix starter App!
 
 - [Remix Docs](https://remix.run/docs)
 
 ## Development
 
 From your terminal:
+
+```sh
+npm run i
+```
 
 ```sh
 npm run dev
