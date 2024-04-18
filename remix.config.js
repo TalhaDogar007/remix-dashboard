@@ -20,7 +20,7 @@ const postRoutes = [
 const concertRoutes = [
   { path: "concert", component: "concert/home.tsx" },
   { path: "concert/trending", component: "concert/trending.tsx" },
-  { path: "concert/:city", component: "concert/city.tsx" }
+  { path: "concert/:city/:people", component: "concert/city.tsx" }
 ];
 
 // Combine all route objects into a single array
