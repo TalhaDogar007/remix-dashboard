@@ -11,6 +11,7 @@ export interface Params {
 
 const getParam = async (params: Params) => {
     console.log('params//: ', params);
+    return params
 
 
 }
