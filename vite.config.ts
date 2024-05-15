@@ -9,7 +9,7 @@ installGlobals();
 // Define route objects for different sections of your app
 const homeRoutes = [
   { path: "/", component: "components/home/home.tsx", options: { index: true } },
-  { path: "/home2", component: "components/home/home2.tsx"},
+  { path: "/files", component: "components/files/files.tsx"},
 ];
 
 // const postRoutes = [
