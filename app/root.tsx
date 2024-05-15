@@ -7,6 +7,8 @@ import {
 } from "@remix-run/react";
 
 
+import { Main } from "./main";
+
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,7 +20,9 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        
+        <Main>{children}</Main>
+
         <ScrollRestoration />
         <Scripts />
       </body>
