@@ -4,18 +4,26 @@ import { defineConfig } from "vite";
 
 installGlobals();
 
-
-
 // Define route objects for different sections of your app
 const homeRoutes = [
-  { path: "/", component: "components/home/home.tsx", options: { index: true } },
-  { path: "/files", component: "components/files/files.tsx"},
+  {
+    path: "/",
+    component: "components/home/home.tsx",
+    options: { index: true },
+  },
 ];
 
-// const postRoutes = [
-//   { path: "post", component: "post/index.tsx" },
-//   { path: "post/new", component: "post/new.tsx" }
-// ];
+const filesRoutes = [
+  { path: "/files", component: "components/files/files.tsx", options: {} },
+];
+
+const settingsRoutes = [
+  {
+    path: "/settings",
+    component: "components/settings/settings.tsx",
+    options: {},
+  },
+];
 
 // const concertRoutes = [
 //   { path: "concert", component: "concert/home.tsx" },
@@ -24,25 +32,12 @@ const homeRoutes = [
 // ];
 
 // Combine all route objects into a single array
-const allRoutes = [...homeRoutes];
-
-// Define routes using the array of route objects
-// export default {
-//   routes(defineRoutes) {
-//     return defineRoutes((route) => {
-//       allRoutes.forEach(({ path, component, options }) => {
-//         route(path, component, options);
-//       });
-//     });
-//   },
-// };
-
+const allRoutes = [...homeRoutes, ...filesRoutes, ...settingsRoutes];
 
 export default defineConfig({
   plugins: [
     remix({
       routes: async (defineRoutes) => {
-
         return defineRoutes((route) => {
           allRoutes.forEach(({ path, component, options }) => {
             route(path, component, options);

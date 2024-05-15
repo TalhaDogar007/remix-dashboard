@@ -22,9 +22,6 @@ export const SideBar: React.FC<SideBarProps> = ({ url }) => {
                 <Link to="/files" className={url === "/files" ? active_button : sidebar_button}>
                     Files
                 </Link>
-                <Link to='/graphs' className={url === "/graphs" ? active_button : sidebar_button}>
-                    Graph
-                </Link>
                 <Link to="/settings" className={url === "/settings" ? active_button : sidebar_button}>
                     Settings
                 </Link>
