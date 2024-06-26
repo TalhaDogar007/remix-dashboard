@@ -1,11 +1,18 @@
-.container {
-  width: 500px;
-  height: 300px;
-  background-color: rgb(127, 144, 255);
-  margin: 0 auto;
-  padding: 20px;
+.root {
+  color: #1877F2;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 body {
+  /* font-family: Inter; */
+  font-family: Arial, sans-serif;
   margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
