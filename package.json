@@ -8,12 +8,16 @@
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
     "start": "remix-serve ./build/server/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "prisma": "npx prisma generate --schema ./app/db/prisma/schema.prisma",
+    "db-push": "prisma db push --schema ./app/db/prisma/schema.prisma"
   },
   "dependencies": {
+    "@prisma/client": "^5.16.1",
     "@remix-run/react": "^2.9.1",
     "@remix-run/serve": "^2.9.1",
     "isbot": "^4.1.0",
+    "prisma": "^5.16.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
